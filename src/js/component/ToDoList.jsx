@@ -105,7 +105,9 @@ const ToDoList = () => {
     <div className='text-center'>
       <h1> To do list!</h1>
       <div className='d-flex justify-content-end me-5'>
+        <button type="button" onClick={crearUsuario} className="add-button">Create user</button>
         <button type="button" onClick={deleteAllItems} className="delete-button">Self destruct</button>
+        
       </div>
 
       <input className="mt-4" type="text" onKeyDown={enter} placeholder='Add task' />
